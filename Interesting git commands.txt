@@ -1,0 +1,37 @@
+Git Checkout "branch" ~ Switches to Specified branch
+Git switch "branch" ~ Switches to Specified branch
+Git checkout -b "branch" ~ Creates a new branch and swithches to that branch
+Git switch -c "branch" ~ Creates a new branch and swithches to that branch
+git cls ~ Clears the cmd
+git ls-files ~ Shows all the files in the staging area
+git status ~ Shows what you have done in the branch since your last commit
+git rm "file name" ~ removes file from staging area
+git checkout "file name" ~ Undoes all the changes you made to the current branch up until your latest staged file (Used for unstaged changes)
+git checkout . ~  Undoes all the changes you made to the current branch up until your latest staged file (Applies to whole folder)
+git restore "file name" ~ Undoes all the changes you made to the current branch up until your latest staged file (Used for unstaged changes)
+git restore . ~  Undoes all the changes you made to the current branch up until your latest staged file (Applies to whole folder)
+git clean -dn ~ Shows you what untracked files and folders wil be deleted
+git clean -df ~ Deletes the file and folders listed in the above  command
+git restore --staged "file name" ~ Unstages file that was staged for commit
+git reset --soft HEAD~x  	~ Resets your branch to a previos commit witch is x commits back, but keeps staged files
+git rest HEAD~x			~ Resets your branch to a previos commit witch is x commits back, but deletes staged files and keeps unstaged files
+git reset --hard HEAD~x  	~ Resets your branch to a previos commit witch is x commits back, but deletes everything after specified commit
+git branch -d branch name ~ Deletes branch if they have already been merged
+git branch -D branch name ~ Deletes branch
+git stash ~ Reverts you to your last commit but saves the work you did in your stash
+git stash list ~ gives you your stashed list
+git stash apply x ~ Applies the stash reference at x to your branch
+git stash drop x ~ removes the x stashed item from tour stashed list
+git stash clear ~ clears your entire stash list
+git stash push -m "stash message name" ~ Gives your stash a name
+git stash pop x ~ Adds the stash to your work branch and removes it from the stash list 
+git reflog ~ Shows the last 30 days actions on repository with id's
+git reset --hard "reflog id" ~ Resets yor branch to this Id (Used to revert to a deleted commit)
+git checkout "reflog id" ~ reverts to commit + git checkout -b "branch name" ~ Create a branch for reverted commit (Commands used to bring back a deleted branch)
+git merge --squash feature ~ when merging feature branches to master this command will take many commits and squash them to one commit yhat tou have to commit
+git cherry-pick "id" ~ Brings this commits changes to the current branch
+git tag tag-name id ~ Gives a specific commit a tag to easily find a specific commit
+git tag ~ Showsa your tags
+git tad -d tag-name ~ deletes tag
+git tag -a tag name -m "tag message" ~ gives a tag a message also
+git show tag-name ~ Shows info tag
