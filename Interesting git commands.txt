@@ -35,3 +35,13 @@ git tag ~ Showsa your tags
 git tad -d tag-name ~ deletes tag
 git tag -a tag name -m "tag message" ~ gives a tag a message also
 git show tag-name ~ Shows info tag
+git branch --track "local trackking branch name" origin/"remote branch name" ~ creates a local tracking branch
+git push (on tracking branch) ~ Pushes to connected remote branch
+git pull (on tracking branch) ~ Pulls new data from remote to local tracking branch
+git remote ~ Show remote servers
+git branch -a ~ list all branches
+git branch -r ~ Show remote tracking branches
+git remote show origin ~ Show detailed configurtion
+git branch -vv list local tracking branches and their remotes
+git branch --delete --remotes branch-name ~ Used to delete remote tracking branches
+git push origin --delete branch-name ~ Delete remote branch on Github      
